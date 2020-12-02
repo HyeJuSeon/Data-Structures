@@ -63,7 +63,7 @@ void PQType<ItemType>::Ordering(int** orderList, int M)
     // Input Your Code
     // You only need to write the code that changes the priority according to the orderlist.
     
-    // orderList Á¶°Ç¿¡ ¸Â°Ô ¿ì¼±¼øÀ§ Á¤·Ä
+    // orderList ì¡°ê±´ì— ë§ê²Œ ìš°ì„ ìˆœìœ„ ì •ë ¬
     int num1, num2;
     int pr1, pr2;
     for (int i = 0; i < M; i++) {
@@ -75,7 +75,7 @@ void PQType<ItemType>::Ordering(int** orderList, int M)
             linkedList.SwapPriority(num1, num2);
         }
 
-        // ¹®Á¦ ¹øÈ£ ¼ø¼­´ë·Î Á¤·Ä
+        // ë¬¸ì œ ë²ˆí˜¸ ìˆœì„œëŒ€ë¡œ ì •ë ¬
         linkedList.ResetList();
         for (int i = 0; i < linkedList.LengthIs(); i++) {
             ItemType item;
@@ -89,7 +89,6 @@ void PQType<ItemType>::Ordering(int** orderList, int M)
                 }
             }
         }
-        pr2 = linkedList.GetPriority(num2);
     }
 }
 
